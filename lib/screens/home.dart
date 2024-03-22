@@ -7,7 +7,9 @@ class Home extends StatelessWidget{
   Widget build(BuildContext context) {
     return  Scaffold(
       appBar: AppBar(
-        title: Text('To-Do App')),
+        backgroundColor: Colors.red,
+        // title: Text('To-Do App')
+        ),
       body: Container(
         child: Text('This is home page!'),
       ),
