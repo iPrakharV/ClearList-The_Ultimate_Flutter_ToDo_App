@@ -1,24 +1,28 @@
 import 'package:flutter/material.dart';
-import 'package:to_do/constants/colors.dart';
+import '../constants/colors.dart';
+import '../widgets/todo_item.dart';
+import '../model/todo.dart';
 
 class Home extends StatelessWidget {
-  const Home({Key? key}) : super(key: key);
+  Home({Key? key}) : super(key: key);
+
+  final todoList = ToDo.todoList();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: tdBGColor,
-      appBar: _BuildAppBar(),
+      appBar: _buildAppBar(), // Corrected method name to camelCase
       body: Container(
-        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
         child: Column(children: [
           searchBox(),
           Expanded(
             child: ListView(
-              children:[
+              children: [
                 Container(
-                  margin: EdgeInsets.only(top: 50, bottom: 20),
-                  child: Text(
+                  margin: const EdgeInsets.only(top: 50, bottom: 20),
+                  child: const Text(
                     'All Tasks',
                     style: TextStyle(
                       color: tdBlack,
@@ -26,11 +30,14 @@ class Home extends StatelessWidget {
                       fontWeight: FontWeight.w500,
                     ),
                   ),
-                )
-              ]
-                ,
+                ),
+                for (ToDo todoo in todoList)
+                  ToDoItem(
+                    todo: todoo,
+                  ),
+              ],
             ),
-          )
+          ),
         ]),
       ),
     );
@@ -38,10 +45,12 @@ class Home extends StatelessWidget {
 
   Widget searchBox() {
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 15),
+      padding: const EdgeInsets.symmetric(horizontal: 15),
       decoration: BoxDecoration(
-          color: Colors.white, borderRadius: BorderRadius.circular(20)),
-      child: TextField(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(20),
+      ),
+      child: const TextField(
         decoration: InputDecoration(
           contentPadding: EdgeInsets.all(0),
           prefixIcon: Icon(
@@ -61,27 +70,29 @@ class Home extends StatelessWidget {
     );
   }
 
-  AppBar _BuildAppBar() {
+  AppBar _buildAppBar() {
+    // Corrected method name to camelCase
     return AppBar(
-        backgroundColor: tdBGColor,
-        elevation: 0,
-        title: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Icon(
-              Icons.menu,
-              color: tdBGColor,
-              size: 30,
+      backgroundColor: tdBGColor,
+      elevation: 0,
+      title: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Icon(
+            Icons.menu,
+            color: tdBlack, // Changed to a visible color
+            size: 30,
+          ),
+          Container(
+            height: 40,
+            width: 40,
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(20),
+              child: Image.asset('assets/images/profile.jpg'),
             ),
-            Container(
-              height: 40,
-              width: 40,
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(20),
-                child: Image.asset('assets/images/profile.jpg'),
-              ),
-            )
-          ],
-        ));
+          ),
+        ],
+      ),
+    );
   }
 }
