@@ -12,17 +12,15 @@
 - **Theme Flexibility:** Includes both dark and light modes to cater to user preference and to minimize eye strain, especially in low-light conditions.
 
 
-### App Screenshots
-
-Here are some glimpses of the app in action:
-
-**iOS Home Screen**
-![iOS Home Screen](screenshots/ios.jpg)
+### App Screenshot
 
 
 
-**Android**
-![Android](screenshots/Android.jpg)
+
+
+
+**Home Screen**
+![Home Screen](screenshots/Android.jpg)
 
 
 ### Streamlined Getting Started Guide
