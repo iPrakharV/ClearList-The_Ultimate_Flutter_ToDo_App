@@ -41,7 +41,7 @@ Ensure you have the following installed:
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/iPrakharV/to_do
+   git clone https://github.com/iPrakharV/To-Do-App-Flutter
    ```
 2. Change to the project directory:
    ```sh
