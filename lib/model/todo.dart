@@ -16,17 +16,17 @@ class ToDo {
       ToDo(
         id: '1',
         todoText: 'Buy groceries',
-        isDone: false,
+        isDone: true,
       ),
       ToDo(
         id: '2',
         todoText: 'Call mom',
-        isDone: false,
+        isDone: true,
       ),
       ToDo(
         id: '3',
         todoText: 'Go for a walk',
-        isDone: true,
+        // isDone: true,
       ),
       ToDo(
         id: '4',
