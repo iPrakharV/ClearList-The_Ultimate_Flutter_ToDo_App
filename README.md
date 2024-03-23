@@ -17,7 +17,7 @@
 Here are some glimpses of the app in action:
 
 **iOS Home Screen**
-![iOS Home Screen](https://github.com/iPrakharV/To-Do-App-Flutter/screenshots/ios.jpg)
+![iOS Home Screen](screenshots/ios.jpg)
 
 **iOS Search**
 ![iOS Search](path/to/your/screenshot.png)
