@@ -28,8 +28,8 @@ To get a local copy up and running, follow these simple steps.
 
 1. Clone the repo
    ```sh
-[   git clone https://github.com/your_username_/FlutterToDoApp.git
-](https://github.com/iPrakharV/to_do)   ```
+[   git clone https://github.com/iPrakharV/to_do
+] ```
 2. Navigate to the project directory
    ```sh
    cd FlutterToDoApp
@@ -67,7 +67,3 @@ Distributed under the MIT License. See `LICENSE` for more information.
 - Flutter's amazing documentation and community
 - [Icon8](https://icons8.com/) for icons
 - [Flutter Awesome](https://flutterawesome.com/) for UI inspiration
-
----
-
-This description covers the essential aspects of your project, including what it does, how to get it running locally, the technologies you used, how others can contribute, and your acknowledgment of any third-party resources or inspiration. Adjust the details as necessary to match your actual app features and dependencies.
