@@ -11,6 +11,21 @@
 - **Organized Task Categories:** Enhances focus and efficiency by allowing users to categorize tasks.
 - **Theme Flexibility:** Includes both dark and light modes to cater to user preference and to minimize eye strain, especially in low-light conditions.
 
+
+### App Screenshots
+
+Here are some glimpses of the app in action:
+
+**iOS Home Screen**
+![iOS Home Screen](path/to/your/screenshot.png)
+
+**iOS Search**
+![iOS Search](path/to/your/screenshot.png)
+
+**Android**
+![Android](path/to/your/screenshot.png)
+
+
 ### Streamlined Getting Started Guide
 
 To set up the app locally, follow these steps:
