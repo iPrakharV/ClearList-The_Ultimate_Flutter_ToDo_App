@@ -9,42 +9,40 @@ class ToDo {
     this.isDone = false,
   });
 
-
-
-  static List<ToDo> todoList(){
+  static List<ToDo> todoList() {
     return [
       ToDo(
-        id: '1',
+        id: '01',
         todoText: 'Buy groceries',
         isDone: true,
       ),
       ToDo(
-        id: '2',
+        id: '02',
         todoText: 'Call mom',
         isDone: true,
       ),
       ToDo(
-        id: '3',
+        id: '03',
         todoText: 'Go for a walk',
         // isDone: true,
       ),
       ToDo(
-        id: '4',
+        id: '04',
         todoText: 'Read a book',
         // isDone: false,
       ),
       ToDo(
-        id: '5',
+        id: '05',
         todoText: 'Cook dinner',
         // isDone: false,
       ),
       ToDo(
-        id: '6',
+        id: '06',
         todoText: 'Watch a movie',
         // isDone: true,
       ),
       ToDo(
-        id: '7',
+        id: '07',
         todoText: 'Go to bed',
         // isDone: true,
       ),
