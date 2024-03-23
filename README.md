@@ -28,8 +28,8 @@ To get a local copy up and running, follow these simple steps.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/FlutterToDoApp.git
-   ```
+[   git clone https://github.com/your_username_/FlutterToDoApp.git
+](https://github.com/iPrakharV/to_do)   ```
 2. Navigate to the project directory
    ```sh
    cd FlutterToDoApp
