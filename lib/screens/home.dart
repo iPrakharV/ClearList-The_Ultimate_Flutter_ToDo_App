@@ -47,7 +47,7 @@ class _HomeState extends State<Home> {
                           ),
                         ),
                       ),
-                      for (ToDo todo in todoList)
+                      for (ToDo todo in foundToDo)
                         ToDoItem(
                           todo: todo,
                           onToDoChanged: handleToDoChange,
@@ -146,6 +146,23 @@ class _HomeState extends State<Home> {
         todoText: toDo,
       ));
       todoController.clear();
+    });
+  }
+
+  void runFilter(String enteredKeyword) {
+    List<ToDo> results = [];
+    if (enteredKeyword.isEmpty) {
+      results = todoList;
+    } else {
+      results = todoList
+          .where((element) => element.todoText!
+              .toLowerCase()
+              .contains(enteredKeyword.toLowerCase()))
+          .toList();
+    }
+
+    setState(() {
+      foundToDo = results;
     });
   }
 
