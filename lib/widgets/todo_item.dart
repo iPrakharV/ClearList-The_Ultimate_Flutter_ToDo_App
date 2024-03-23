@@ -4,8 +4,15 @@ import '../model/todo.dart';
 
 class ToDoItem extends StatelessWidget {
   final ToDo todo;
+  final onToDoChanged;
+  final onDeleteItem;
 
-  const ToDoItem({Key? key, required this.todo}) : super(key: key);
+  const ToDoItem(
+      {Key? key,
+      required this.todo,
+      required this.onDeleteItem,
+      required this.onToDoChanged})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +20,8 @@ class ToDoItem extends StatelessWidget {
         margin: EdgeInsets.only(bottom: 20),
         child: ListTile(
           onTap: () {
-            print('Tapped');
+            // print('Tapped');
+            onToDoChanged(todo); 
           },
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(20),
@@ -21,15 +29,19 @@ class ToDoItem extends StatelessWidget {
           contentPadding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
           tileColor: Colors.white,
           leading: Icon(
-              todo.isDone != null && todo.isDone! ? Icons.check_box : Icons.check_box_outline_blank,
+              todo.isDone != null && todo.isDone!
+                  ? Icons.check_box
+                  : Icons.check_box_outline_blank,
               color: tdBlue),
           title: Text(
             todo.todoText!,
             style: TextStyle(
-                color: tdBlack,
-                fontSize: 16,
-                decoration: todo.isDone != null && todo.isDone! ? TextDecoration.lineThrough : null,
-                ),
+              color: tdBlack,
+              fontSize: 16,
+              decoration: todo.isDone != null && todo.isDone!
+                  ? TextDecoration.lineThrough
+                  : null,
+            ),
           ),
           trailing: Container(
             padding: EdgeInsets.all(0),
