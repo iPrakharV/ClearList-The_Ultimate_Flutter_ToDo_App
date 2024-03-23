@@ -12,7 +12,14 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   final todoList = ToDo.todoList();
+  List<ToDo> foundToDo = [];
   final todoController = TextEditingController();
+
+  @override
+  void initState() {
+    foundToDo = todoList;
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
