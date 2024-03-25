@@ -2,7 +2,7 @@
 
 ###  Overview
 
-**Flutter ToDo App** is a streamlined and user-friendly task management application, crafted to assist users in efficiently organizing their daily tasks and priorities. Developed within a concise timeframe of 5 hours, this app exemplifies the capabilities of Flutter and Dart in delivering top-notch mobile applications for both iOS and Android platforms using a unified codebase.
+**ClearList** is a streamlined and user-friendly task management application, crafted to assist users in efficiently organizing their daily tasks and priorities. Developed within a concise timeframe of 5 hours, this app exemplifies the capabilities of Flutter and Dart in delivering top-notch mobile applications for both iOS and Android platforms using a unified codebase.
 
 ### Enhanced Features Section
 
