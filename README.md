@@ -1,4 +1,4 @@
-# ClearList: The Ultimate Flutter ToDo App
+# ClearList: The Flutter ToDo App
 
 ###  Overview
 
